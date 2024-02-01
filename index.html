@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body class="container">
+    <header class="text-center">
+        <h1>Registration Form</h1>
+    </header>
+    <br>
+    <form name="RegForm" onsubmit="return Validate()">
+        <div class="form-group">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" class="form-control" placeholder="Mayank" name = "Name">
+        </div><br>
+
+        <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="EMail" class="form-control">
+            <small class="form-text text-muted" id="name-error">We'll never share your email with anyone else.</small>
+        </div><br>
+
+        <div class="alert alert-danger" hidden role="alert" id="wrong-email"></div>
+        <div class="form-group">
+            <label for="members">Password</label>
+            <input type="text" id="pwd" name = "Password" class="form-control">
+        </div><br>
+        
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div><br>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
